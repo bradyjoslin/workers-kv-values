@@ -12,8 +12,8 @@
 #               wrangler      https://github.com/cloudflare/wrangler
 #               jq            https://stedolan.github.io/jq/
 
-USAGE=$(
-"Creates a JSON array of all key values stored in a
+USAGE=$(cat <<-END
+Creates a JSON array of all key values stored in a
 Workers KV namespace, where the values are strings.\n\n
 FLAGS:\n
               \t-h\tPrints help information\n\n
@@ -22,7 +22,8 @@ ARGS:\n
               \t<environment>\t\tDefaults to none (dev environment)\n\n
 Dependencies:\n
               \twrangler - https://github.com/cloudflare/wrangler\n
-              \tjq - https://stedolan.github.io/jq/\n"
+              \tjq - https://stedolan.github.io/jq/\n
+END
 )
 
 if [ "${1}" == "-h" ]; then
