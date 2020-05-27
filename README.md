@@ -1,5 +1,5 @@
 # workers-kv-values
-Creates a JSON array of all key values stored in a Workers KV namespace
+Creates a JSON array of all key values stored in a [Cloudflare Workers KV](https://developers.cloudflare.com/workers/reference/storage/) namespace
 
 ## Usage
 
