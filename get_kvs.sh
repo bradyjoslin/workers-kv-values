@@ -26,7 +26,7 @@ Dependencies:\n
 )
 
 if [ "${1}" == "-h" ]; then
-  echo -e $USAGE
+  echo -e ${USAGE}
   exit 0
 fi
 
@@ -36,7 +36,7 @@ kv_environment_in=${2};
 if [ -z "${kv_namespace_in}" ]
 then
     echo -e "Error! namespace argument required\n"
-    echo -e $USAGE
+    echo -e ${USAGE}
     exit 1
 fi
 
