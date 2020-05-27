@@ -3,7 +3,7 @@ Creates a JSON array of all key values stored in a Workers KV namespace
 
 ## Usage
 
-```bash
+```text
 Creates a JSON array of all key values stored in a Workers KV namespace, where the values are strings.
 
  FLAGS:
