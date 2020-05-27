@@ -23,3 +23,23 @@ Run this script in the same directory as your `wrangler.toml` file.
 ```bash
 curl -fsSL "https://raw.githubusercontent.com/bradyjoslin/workers-kv-values/master/get_kvs.sh" | sh -s -- <namespace> <environment>
 ```
+
+## Output
+
+Sample output:
+
+```json
+[
+  {
+    "key": "1",
+    "value": "value for 1"
+  },
+  {
+    "key": "2",
+    "value": "value for 2"
+  },
+  {
+    "key": "3",
+    "value": "value for 3"
+  }
+]
