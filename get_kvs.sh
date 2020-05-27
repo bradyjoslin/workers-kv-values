@@ -27,23 +27,22 @@ Dependencies:
 END
 )
 
-if [ "${1}" == "-h" ]; then
+if [ "${1}" = "-h" ]; then
   echo "${USAGE}"
   exit 0
 fi
 
-kv_namespace_in=${1};
-kv_environment_in=${2};
+kv_namespace_in=${1}
+kv_environment_in=${2}
 
-if [ -z "${kv_namespace_in}" ]
-then
-    echo -e "Error! namespace argument required\n"
+if [ -z "${kv_namespace_in}" ]; then
+    echo "Error! namespace argument required"
+    echo ""
     echo "${USAGE}"
     exit 1
 fi
 
-if [ -z "${kv_environment_in}" ]
-then
+if [ -z "${kv_environment_in}" ]; then
     env_arg=""
 else
     env_arg="--env=${kv_environment_in}"
