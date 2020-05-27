@@ -12,7 +12,7 @@
 #               wrangler      https://github.com/cloudflare/wrangler
 #               jq            https://stedolan.github.io/jq/
 
-USAGE=(
+USAGE=$(
 "Creates a JSON array of all key values stored in a
 Workers KV namespace, where the values are strings.\n\n
 FLAGS:\n
